@@ -40,20 +40,25 @@ require([
 ) {
     // parser.parse();
 
-    map = new Map("map", {
-        basemap: "dark-gray",
-        center: [-95, 39],                     // longitude, latitude
-       zoom: 5,
-       fadeOnZoom: true,
-    });
+	map = new Map("map", {
+		basemap: "dark-gray",
+		center: [-92.328817, 38.947918], 					// longitude, latitude
+    zoom: 15,
+    fadeOnZoom: true,
+	});
 
-    var locate = new LocateButton({
+	var locate = new LocateButton({
     map: map,
     highlightLocation: true
-}, 'LocateButton');
+	}, 'LocateButton');
 
-map.on("click", function(evt){
-    console.log(evt);
-});
+	map.on("click", function(evt){
+	    console.log(evt);
+	});
+
+	var studentJson = [
+		{"firstName": "John", "lastName": "Doe", "isTutor": false, "helpsWith": null},
+		{"firstName": "Jenny", "lastName": "Smith", "isTutor": true, "helpsWith": "CS1050"}
+	];
 
 });
