@@ -1,12 +1,38 @@
-<DOCTYPE! html>
+<!DOCTYPE html>
 <html>
 <head>
-<title>Project Mesa</title>
-</head>
-<body>
-	<p>Project Mesa</p>
-	<div id="map">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Project Mesa</title>
+	<link rel="stylesheet" href="//js.arcgis.com/3.15/esri/css/esri.css">
 
-	</div>
+	<style>
+		html, body, #map {
+	        height: 100%;
+	        margin: 0;
+	        padding: 0;
+		}
+	</style>
+
+</head>
+<body class="claro">
+	<script type="text/javascript">
+		//var baseUrl = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/'));
+		var dojoConfig = {
+		isDebug: true,
+		async: true,
+		packages: [{
+			name: 'app',
+			location: "https://github.com/Jatrammel/ProjectMesa/blob/master/mapFunctionality"
+		}],
+		//deps: ['/mapFunctionality']
+		};
+	</script>
+	<script src="//js.arcgis.com/3.15"></script>
+	<p>
+		Project Mesa
+	</p>
+	<div id="map"></div>
+	<!-- <div id="statesQueryTextBox"></div> -->
 </body>
 </html>
