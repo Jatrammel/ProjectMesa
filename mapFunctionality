@@ -46,3 +46,4 @@ require([
   map.on("click", function(evt){
     console.log(evt);
   });
+});
