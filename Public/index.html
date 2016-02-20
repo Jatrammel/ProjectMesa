@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Project Mesa</title>
-	<link rel="stylesheet" href="//js.arcgis.com/3.15/esri/css/esri.css">
+	<link rel="stylesheet" href="http://js.arcgis.com/3.15/esri/css/esri.css">
 
 	<style>
 		html, body, #map {
@@ -16,23 +16,12 @@
 
 </head>
 <body class="claro">
-	<script type="text/javascript">
-		//var baseUrl = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/'));
-		var dojoConfig = {
-		isDebug: true,
-		async: true,
-		packages: [{
-			name: 'app',
-			location: "https://github.com/Jatrammel/ProjectMesa/blob/master/mapFunctionality"
-		}],
-		//deps: ['/mapFunctionality']
-		};
-	</script>
-	<script src="//js.arcgis.com/3.15"></script>
-	<p>
-		Project Mesa
-	</p>
-	<div id="map"></div>
-	<!-- <div id="statesQueryTextBox"></div> -->
+	<script src="https://js.arcgis.com/3.15/"></script>
+	<script type="text/javascript" src="mapFunctionality.js"></script>
+	<div id="map">
+		<div id="LocateButton">
+	</div>
+
+	</div>
 </body>
 </html>
