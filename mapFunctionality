@@ -39,11 +39,7 @@ require([
 	var map = new Map("map", {
 		basemap: "dark-gray",
 		center: [-95, 39], 					// longitude, latitude
-    zoom: 5,
-    fadeOnZoom: true,
+        zoom: 5,
+        fadeOnZoom: true,
 	});
-
-  map.on("click", function(evt){
-    console.log(evt);
-  });
 });
