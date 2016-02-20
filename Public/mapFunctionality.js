@@ -42,9 +42,9 @@ require([
 
 	map = new Map("map", {
 		basemap: "dark-gray",
-		center: [-95, 39], 					// longitude, latitude
-        zoom: 5,
-        fadeOnZoom: true,
+		center: [-92.328817, 38.947918], 					// longitude, latitude
+    zoom: 15,
+    fadeOnZoom: true,
 	});
 
 	var locate = new LocateButton({
@@ -53,7 +53,12 @@ require([
 }, 'LocateButton');
 
 map.on("click", function(evt){
-	console.log(evt);
+	console.log(locate);
 });
+
+var studentJson = [
+	{"firstName": "John", "lastName": "Doe", "isTutor": false, "helpsWith": null},
+	{"firstName": "Jenny", "lastName": "Smith", "isTutor": true, "helpsWith": "CS1050"}
+];
 
 });
