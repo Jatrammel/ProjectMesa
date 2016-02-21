@@ -48,7 +48,6 @@ require([
 	});
 
 	var locate = new LocateButton({
-<<<<<<< HEAD
 	map: map,
 	highlightLocation: true
 }, 'LocateButton');
@@ -56,7 +55,6 @@ require([
 map.on("click", function(evt){
 	console.log(locate);
 });
-=======
     map: map,
     highlightLocation: true
 	}, 'LocateButton');
@@ -64,7 +62,6 @@ map.on("click", function(evt){
 	map.on("click", function(evt){
 	    console.log(evt);
 	});
->>>>>>> master
 
 	var studentJson = [
 		{"firstName": "John", "lastName": "Doe", "isTutor": false, "helpsWith": null},
