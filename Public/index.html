@@ -24,7 +24,32 @@
         top: 135px;
         left: 20px;
         z-index: 50;
-        }       
+        }
+        .navbar-header {
+            float: left;
+            padding: 15px;
+            width: 95%;
+        }
+        .navbar-brand {
+            position: absolute;
+            left: 45%;
+            margin-left: -26px;  /* 50% of your logo width */
+            padding: 15px;
+            top: 0px;
+            display: block;
+            float:left;
+            font-size: 24px;
+        }
+
+        .navbar-right {
+            float: left;
+            height: 50px;
+            padding: 15px;
+            font-size: 18px;
+            line-height: 20px;
+            margin-right: -50px;
+        }
+
 
     </style>
 </head>
@@ -35,10 +60,15 @@
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Project Mesa</a>
+                <a class="navbar-brand" id="logo" href="#">Project Mesa</a>
+                
             </div>
+            <div class="navbar-right">
+                <a>Sign In</a>
+            </div>    
         </div>
     </nav>
+
     <!-- Map body -->
     <div id="map">
         <div id="LocateButton"></div>
