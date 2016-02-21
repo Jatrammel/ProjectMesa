@@ -43,8 +43,8 @@ require([
 	map = new Map("map", {
 		basemap: "dark-gray",
 		center: [-92.328817, 38.947918], 					// longitude, latitude
-    zoom: 15,
-    fadeOnZoom: true,
+	    zoom: 15,
+	    fadeOnZoom: true,
 	});
 
 	var locate = new LocateButton({
@@ -55,9 +55,7 @@ require([
 map.on("click", function(evt){
 	console.log(locate);
 });
-    map: map,
-    highlightLocation: true
-	}, 'LocateButton');
+
 
 	map.on("click", function(evt){
 	    console.log(evt);
