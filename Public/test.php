@@ -1,5 +1,0 @@
-<?php
-
-$testvar = "Hello";
-
-?>
